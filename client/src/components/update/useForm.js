@@ -77,7 +77,7 @@ const useForm = (props , validate) => {
 
     // GET ARTICLE DATA
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/article/${props.match.params.id}`)
+        axios.get(`/api/article/${props.match.params.id}`)
         .then((res) => {
             setValues({
                 title: res.data.data.title,
